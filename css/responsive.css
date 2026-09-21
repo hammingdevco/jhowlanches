@@ -1,0 +1,93 @@
+/* ==========================================================================
+   responsive.css — REGRAS PARA TELAS MENORES
+
+   Breakpoints (desktop-first):
+   ≤ 1100px  notebook pequeno / tablet paisagem
+   ≤  899px  tablet retrato e celular → menu hambúrguer + barra inferior
+   ≤  700px  celular grande
+   ≤  480px  celular pequeno
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .featured-grid { grid-template-columns: repeat(2, 1fr); }
+  .cat-tiles { grid-template-columns: repeat(3, 1fr); }
+  .quick-list { grid-template-columns: repeat(2, 1fr); }
+  .quick-item:nth-child(3) { border-left: 0; }
+  .quick-item:nth-child(n + 3) { border-top: 2px dashed rgba(255, 190, 30, 0.35); }
+  .main-nav a { padding-inline: 0.7rem; }
+}
+
+@media (max-width: 899px) {
+  /* Header mobile + menu hambúrguer */
+  .hide-mobile { display: none !important; }
+  .only-mobile { display: block; }
+  .nav-toggle { display: inline-grid; }
+  .header-actions { margin-left: auto; }
+  .main-nav {
+    position: fixed; top: var(--header-h); left: 0; right: 0; margin: 0; padding: 1rem 1.25rem 1.5rem;
+    display: none; max-height: calc(100dvh - var(--header-h)); overflow-y: auto;
+    background: var(--bg-2); border-bottom: 1px solid var(--line); box-shadow: var(--shadow-2);
+  }
+  .site-header.nav-open .main-nav { display: block; }
+  .main-nav ul { flex-direction: column; gap: 0.25rem; }
+  .main-nav a { padding: 0.9rem 1rem; font-size: 1.1rem; }
+  .main-nav .btn { display: flex; justify-content: center; margin-top: 0.5rem; background: var(--mustard); color: var(--ink); }
+  .main-nav .btn:hover { background: #ffcc4a; color: var(--ink); }
+
+  /* Barra de ação inferior */
+  body { padding-bottom: calc(4.75rem + env(safe-area-inset-bottom)); }
+  .mobile-bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 120; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem;
+    padding: 0.45rem 0.6rem calc(0.45rem + env(safe-area-inset-bottom));
+    background: rgba(28, 16, 11, 0.96); backdrop-filter: blur(12px); border-top: 1px solid var(--line);
+  }
+  .mobile-bar a {
+    display: flex; flex-direction: column; align-items: center; gap: 0.15rem; padding: 0.5rem 0.25rem; border-radius: 14px;
+    font-size: 0.78rem; font-weight: 700; line-height: 1.2; text-decoration: none; color: var(--muted);
+  }
+  .mobile-bar a:nth-child(2) { background: var(--mustard); color: var(--ink); }
+  .toast-region { bottom: calc(5.75rem + env(safe-area-inset-bottom)); }
+
+  /* Layouts em coluna única */
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { order: -1; max-width: 340px; margin-inline: auto; }
+  .hero { padding-top: 1.25rem; }
+  .sauce-grid, .local-grid, .reviews-grid, .product, .auth-grid, .contact-grid, .proposal-grid { grid-template-columns: 1fr; }
+  .sauce-quote { max-width: 26rem; }
+  .services { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+  .auth-grid { padding-block: 1.5rem 3rem; }
+  .account-card { grid-template-columns: auto 1fr; }
+  .account-card .btn { grid-column: 1 / -1; justify-self: start; }
+}
+
+@media (max-width: 700px) {
+  body { font-size: 1rem; }
+  .container { width: min(100% - 2rem, var(--container)); }
+  .menu-toolbar { grid-template-columns: 1fr; }
+  .featured-grid { grid-template-columns: 1fr; }
+  .cat-tiles { grid-template-columns: repeat(2, 1fr); }
+  .cat-tiles li:last-child { grid-column: 1 / -1; }
+  .reviews-list { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .gallery-tall { grid-row: span 1; }
+  .account-card { grid-template-columns: 1fr; justify-items: start; }
+  .account-links { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; padding-block: 2.5rem 1.5rem; }
+  .product-buy .btn-lg { flex: 1 1 auto; }
+  .order-foot .btn { margin-left: 0; }
+  .brand-name { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-actions .btn { flex: 1 1 100%; }
+  .quick-item { padding: 1rem 1.05rem; }
+  .quick-value { font-size: 1.4rem; }
+  .quick-label { font-size: 0.85rem; }
+  .cta-panel .hero-actions .btn { flex: 1 1 100%; }
+  .menu-grid, .skeleton-grid { grid-template-columns: 1fr; }
+  .cart-line { grid-template-columns: 56px 1fr auto; gap: 0.7rem; }
+  .cart-line img { width: 56px; height: 56px; }
+  .btn-row .btn { flex: 1 1 100%; }
+}
