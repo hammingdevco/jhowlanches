@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-auth="loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio | Jhow Lanches</title>
+  <meta name="description" content="Veja o cardápio do Jhow Lanches em Juiz de Fora: lanches, combos, porções, bebidas e especiais. Busque, filtre e monte seu pedido.">
+  <meta name="theme-color" content="#1c100b">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="cardapio">
+  <div id="site-header"></div>
+  <noscript><p class="noscript-note">Este site precisa de JavaScript para exibir o cardápio e o carrinho. Para pedir agora, use o <a href="http://st4y.me/4195138">pedido online</a> ou o <a href="https://wa.me/5532991495040?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido%20no%20Jhow%20Lanches.">WhatsApp</a>.</p></noscript>
+  <main id="conteudo">
+    <div class="container">
+      <header class="page-hero">
+        <h1>Nosso Cardápio</h1>
+        <p>Escolha por categoria, busque pelo nome e monte seu pedido.</p>
+      </header>
+
+      <div class="demo-banner" role="note" data-demo-only>
+        <p><strong>Cardápio demonstrativo.</strong> Itens, descrições e preços são exemplos para apresentar a estrutura. O cardápio oficial está em “Pedir agora”.</p>
+      </div>
+
+      <form class="menu-toolbar" id="menu-search-form" role="search">
+        <div class="search-field">
+          <label class="sr-only" for="menu-search">Buscar no cardápio</label>
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" id="menu-search" placeholder="Buscar lanche, porção, bebida…" autocomplete="off">
+        </div>
+        <div>
+          <label class="sr-only" for="menu-sort">Ordenar por</label>
+          <select id="menu-sort">
+            <option value="default">Ordem padrão</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+            <option value="name">Nome (A–Z)</option>
+          </select>
+        </div>
+        <label class="check-field"><input type="checkbox" id="menu-available"> Só disponíveis</label>
+      </form>
+
+      <div class="chips" id="category-chips" role="group" aria-label="Categorias"></div>
+      <p class="result-count" id="menu-count" aria-live="polite"></p>
+
+      <div class="menu-grid" id="menu-grid"><div class="skeleton-grid" aria-hidden="true"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/pedidos.js"></script>
+  <script src="js/cardapio.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-auth="loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar | Jhow Lanches</title>
+  <meta name="description" content="Entre na sua conta do Jhow Lanches.">
+  <meta name="robots" content="noindex">
+<meta name="theme-color" content="#1c100b">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="login">
+  <div id="site-header"></div>
+  <noscript><p class="noscript-note">Este site precisa de JavaScript para exibir o cardápio e o carrinho. Para pedir agora, use o <a href="http://st4y.me/4195138">pedido online</a> ou o <a href="https://wa.me/5532991495040?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido%20no%20Jhow%20Lanches.">WhatsApp</a>.</p></noscript>
+  <main id="conteudo">
+    <div class="container auth-grid">
+      <div class="auth-pitch">
+        <h1>Entre na sua conta</h1>
+        <p>Com uma conta você salva favoritos e acompanha seus pedidos.</p>
+        <ul class="auth-perks">
+            <li><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Salve seus lanches favoritos</li>
+            <li><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Acompanhe os pedidos enviados pelo site</li>
+            <li><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Seus dados de acesso ficam com o Clerk, não com este site</li>
+          </ul>
+      </div>
+      <div class="auth-card">
+        <div class="spinner" role="status" aria-label="Carregando login" data-show-when="loading"></div>
+        <div class="clerk-mount" id="clerk-sign-in" data-show-when="signed-out" hidden></div>
+        <div style="width:100%">
+          <div class="notice" data-show-when="unconfigured" hidden>
+            <h2>Login ainda não configurado</h2>
+            <p>O site funciona normalmente, mas o Clerk precisa da sua Publishable Key para entrar.</p>
+            <ol>
+              <li>Crie uma aplicação em <strong>clerk.com</strong> e copie a <strong>Publishable Key</strong>.</li>
+              <li>Cole a chave em <code>js/config.js</code>, na constante <code>CLERK_PUBLISHABLE_KEY</code>.</li>
+              <li>Abra o site por um servidor local (Live Server) e recarregue.</li>
+            </ol>
+            <p class="fine-print" style="margin-top:.75rem">O passo a passo completo está no README.md.</p>
+          </div>
+          <div class="notice notice-error" data-show-when="error" hidden>
+            <h2>Não foi possível carregar o login</h2>
+            <p data-auth-error></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/pedidos.js"></script>
+</body>
+</html>
