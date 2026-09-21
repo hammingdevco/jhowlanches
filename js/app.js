@@ -155,7 +155,7 @@
     <header class="site-header" id="site-header-bar">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="${JHOW.name} — página inicial">
-          <img src="assets/icons/logo.svg" alt="" width="40" height="40">
+          <img src="assets/logo.svg" alt="" width="40" height="40">
           <span class="brand-name">${JHOW.name}</span>
         </a>
 
@@ -194,7 +194,7 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html" aria-label="${JHOW.name} — página inicial">
-            <img src="assets/icons/logo.svg" alt="" width="40" height="40">
+            <img src="assets/logo.svg" alt="" width="40" height="40">
             <span class="brand-name">${JHOW.name}</span>
           </a>
           <p>Lanches, sabor e aquele toque especial.</p>
