@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Ilustração demonstrativa de bebida">
+  <defs><linearGradient id="cp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9dfd0"/><stop offset=".5" stop-color="#fff8ee"/><stop offset="1" stop-color="#e9dfd0"/></linearGradient></defs>
+  <ellipse cx="240" cy="452" rx="120" ry="16" fill="#000" opacity=".35"/>
+  <path d="M258 134l22-92h62" fill="none" stroke="#ffbe1e" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="132" y="120" width="216" height="32" rx="12" fill="#2a1508" stroke="#5a3a24" stroke-width="3"/>
+  <path d="M146 152h188l-22 280q-2 16-18 16H186q-16 0-18-16z" fill="url(#cp)"/>
+  <path d="M154 238h172l-8 100H162z" fill="#d9301a"/>
+  <circle cx="240" cy="288" r="22" fill="#ffbe1e"/>
+  <circle cx="200" cy="196" r="7" fill="#fff" opacity=".7"/><circle cx="262" cy="180" r="5" fill="#fff" opacity=".7"/><circle cx="292" cy="206" r="6" fill="#fff" opacity=".7"/>
+</svg>

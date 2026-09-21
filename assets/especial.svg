@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Ilustração demonstrativa de sanduíche especial">
+  <defs>
+    <linearGradient id="et" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcb62"/><stop offset=".6" stop-color="#e58f26"/><stop offset="1" stop-color="#b3590d"/></linearGradient>
+    <linearGradient id="eb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0a53b"/><stop offset="1" stop-color="#b3590d"/></linearGradient>
+    <linearGradient id="em" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#83402a"/><stop offset="1" stop-color="#3a190d"/></linearGradient>
+  </defs>
+  <ellipse cx="300" cy="376" rx="250" ry="20" fill="#000" opacity=".35"/>
+  <path d="M50 262h500v22c0 46-36 74-80 74H130c-44 0-80-28-80-74z" fill="url(#eb)"/>
+  <rect x="40" y="220" width="520" height="56" rx="28" fill="url(#em)"/>
+  <path d="M60 240h480" stroke="#e8501a" stroke-width="14" stroke-linecap="round" stroke-dasharray="46 22"/>
+  <path d="M44 214q30 30 59 0t59 0 59 0 59 0 59 0 59 0 59 0 59 0 59 0v20H44z" fill="#6cc24a"/>
+  <path d="M50 214C50 116 150 66 300 66s250 50 250 148z" fill="url(#et)"/>
+  <path d="M110 150c22-40 66-62 122-66" stroke="#fff" stroke-opacity=".38" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <g fill="#fff1d2"><ellipse cx="210" cy="118" rx="12" ry="6" transform="rotate(-20 210 118)"/><ellipse cx="300" cy="100" rx="12" ry="6"/><ellipse cx="390" cy="120" rx="12" ry="6" transform="rotate(22 390 120)"/><ellipse cx="256" cy="158" rx="12" ry="6" transform="rotate(-6 256 158)"/><ellipse cx="350" cy="160" rx="12" ry="6" transform="rotate(14 350 160)"/></g>
+</svg>

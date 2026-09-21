@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Ilustração demonstrativa de porção de batata frita">
+  <defs>
+    <linearGradient id="fy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd54a"/><stop offset="1" stop-color="#e9a316"/></linearGradient>
+    <linearGradient id="cr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b92410"/><stop offset=".5" stop-color="#e2381f"/><stop offset="1" stop-color="#b92410"/></linearGradient>
+  </defs>
+  <ellipse cx="240" cy="452" rx="150" ry="18" fill="#000" opacity=".35"/>
+  <g fill="url(#fy)">
+    <rect x="122" y="96" width="28" height="190" rx="7" transform="rotate(-18 136 190)"/>
+    <rect x="168" y="70" width="28" height="210" rx="7" transform="rotate(-8 182 175)"/>
+    <rect x="214" y="58" width="28" height="220" rx="7" transform="rotate(2 228 170)"/>
+    <rect x="258" y="74" width="28" height="206" rx="7" transform="rotate(10 272 177)"/>
+    <rect x="302" y="98" width="28" height="186" rx="7" transform="rotate(20 316 190)"/>
+    <rect x="190" y="110" width="28" height="170" rx="7" transform="rotate(-4 204 195)"/>
+    <rect x="240" y="120" width="28" height="160" rx="7" transform="rotate(6 254 200)"/>
+  </g>
+  <path d="M112 258h256l-22 172q-2 16-18 16H152q-16 0-18-16z" fill="url(#cr)"/>
+  <path d="M120 318h240l-6 46H126z" fill="#fff4dc"/>
+  <circle cx="240" cy="341" r="14" fill="#ffbe1e"/>
+</svg>

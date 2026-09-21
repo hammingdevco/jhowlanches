@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-label="Ilustração demonstrativa de um hambúrguer">
+  <defs>
+    <linearGradient id="bt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcb62"/><stop offset=".55" stop-color="#e58f26"/><stop offset="1" stop-color="#b3590d"/></linearGradient>
+    <linearGradient id="bb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0a53b"/><stop offset="1" stop-color="#b3590d"/></linearGradient>
+    <linearGradient id="pt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#83402a"/><stop offset="1" stop-color="#3a190d"/></linearGradient>
+  </defs>
+  <ellipse cx="300" cy="474" rx="236" ry="24" fill="#000" opacity=".35"/>
+  <path d="M72 366h456v20c0 34-28 58-62 58H134c-34 0-62-24-62-58z" fill="url(#bb)"/>
+  <rect x="58" y="298" width="484" height="72" rx="36" fill="url(#pt)"/>
+  <path d="M64 292h472l-58 26-34 46-30-44H168l-22 30-26-32-56-22z" fill="#ffc21a"/>
+  <rect x="84" y="262" width="432" height="34" rx="17" fill="#e0301f"/>
+  <path d="M110 272h380" stroke="#ff8a70" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+  <rect x="96" y="298" width="408" height="14" rx="7" fill="#e8501a"/>
+  <path d="M150 306v34a9 9 0 0 0 18 0v-34zM292 306v50a9 9 0 0 0 18 0v-50zM424 306v28a9 9 0 0 0 18 0v-28z" fill="#e8501a"/>
+  <path d="M58 246q30 34 60.500 0t60.500 0 60.500 0 60.500 0 60.500 0 60.500 0 60.500 0 60.500 0v22H58z" fill="#6cc24a"/>
+  <path d="M70 258q30 26 60.500 0t60.500 0 60.500 0 60.500 0 60.500 0 60.500 0 60.500 0" fill="none" stroke="#4ea132" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+  <path d="M56 232c0-118 110-190 244-190s244 72 244 190z" fill="url(#bt)"/>
+  <path d="M118 158c20-52 68-84 132-92" stroke="#fff" stroke-opacity=".38" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <g fill="#fff1d2">
+    <ellipse cx="200" cy="120" rx="13" ry="7" transform="rotate(-25 200 120)"/>
+    <ellipse cx="300" cy="90" rx="13" ry="7" transform="rotate(8 300 90)"/>
+    <ellipse cx="392" cy="122" rx="13" ry="7" transform="rotate(28 392 122)"/>
+    <ellipse cx="252" cy="168" rx="13" ry="7" transform="rotate(-8 252 168)"/>
+    <ellipse cx="350" cy="172" rx="13" ry="7" transform="rotate(20 350 172)"/>
+    <ellipse cx="450" cy="180" rx="13" ry="7" transform="rotate(-18 450 180)"/>
+    <ellipse cx="150" cy="190" rx="13" ry="7" transform="rotate(14 150 190)"/>
+  </g>
+</svg>
