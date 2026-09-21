@@ -38,7 +38,7 @@ const menuItems = [
     description: "Descrição demonstrativa. Substitua pelo item real do cardápio.",
     price: 14,
     category: "lanches",
-    image: "assets/images/burger.svg",
+    image: "assets/burger.svg",
     available: true,
     demo: true
   },
@@ -48,7 +48,7 @@ const menuItems = [
     description: "Descrição demonstrativa. Substitua pelo item real do cardápio.",
     price: 18,
     category: "lanches",
-    image: "assets/images/burger.svg",
+    image: "assets/burger.svg",
     available: true,
     demo: true
   },
@@ -58,7 +58,7 @@ const menuItems = [
     description: "Descrição demonstrativa. Substitua pelo item real do cardápio.",
     price: 12,
     category: "lanches",
-    image: "assets/images/especial.svg",
+    image: "assets/especial.svg",
     available: true,
     demo: true
   },
@@ -68,7 +68,7 @@ const menuItems = [
     description: "Descrição demonstrativa de combo. Substitua pelo item real.",
     price: 20,
     category: "combos",
-    image: "assets/images/combo.svg",
+    image: "assets/combo.svg",
     available: true,
     demo: true
   },
@@ -78,7 +78,7 @@ const menuItems = [
     description: "Item marcado como indisponível para demonstrar esse estado.",
     price: 19,
     category: "combos",
-    image: "assets/images/combo.svg",
+    image: "assets/combo.svg",
     available: false,
     demo: true
   },
@@ -88,7 +88,7 @@ const menuItems = [
     description: "Descrição demonstrativa de porção. Substitua pelo item real.",
     price: 15,
     category: "porcoes",
-    image: "assets/images/fries.svg",
+    image: "assets/fries.svg",
     available: true,
     demo: true
   },
@@ -98,7 +98,7 @@ const menuItems = [
     description: "Descrição demonstrativa de porção. Substitua pelo item real.",
     price: 20,
     category: "porcoes",
-    image: "assets/images/fries.svg",
+    image: "assets/fries.svg",
     available: true,
     demo: true
   },
@@ -108,7 +108,7 @@ const menuItems = [
     description: "Descrição demonstrativa de bebida. Substitua pelo item real.",
     price: 6,
     category: "bebidas",
-    image: "assets/images/drink.svg",
+    image: "assets/drink.svg",
     available: true,
     demo: true
   },
@@ -118,7 +118,7 @@ const menuItems = [
     description: "Descrição demonstrativa de bebida. Substitua pelo item real.",
     price: 8,
     category: "bebidas",
-    image: "assets/images/drink.svg",
+    image: "assets/drink.svg",
     available: true,
     demo: true
   },
@@ -128,7 +128,7 @@ const menuItems = [
     description: "Descrição demonstrativa de item especial. Substitua pelo item real.",
     price: 17,
     category: "especiais",
-    image: "assets/images/especial.svg",
+    image: "assets/especial.svg",
     available: true,
     demo: true
   }
@@ -140,12 +140,12 @@ const menuItems = [
    Depois remova "demo: true" para esconder o selo "Foto demonstrativa".
    -------------------------------------------------------------------------- */
 const galleryItems = [
-  { src: "assets/images/burger.svg",           alt: "Ilustração demonstrativa de um hambúrguer",            caption: "Lanches",  demo: true, size: "wide" },
-  { src: "assets/images/foto-placeholder.svg", alt: "Espaço reservado para a foto oficial da fachada",      caption: "Fachada",  demo: true, size: "tall" },
-  { src: "assets/images/fries.svg",            alt: "Ilustração demonstrativa de porção de batata frita",   caption: "Porções",  demo: true, size: "sq" },
-  { src: "assets/images/foto-placeholder.svg", alt: "Espaço reservado para a foto oficial do ambiente",     caption: "Ambiente", demo: true, size: "sq" },
-  { src: "assets/images/especial.svg",         alt: "Ilustração demonstrativa de sanduíche especial",       caption: "Especiais", demo: true, size: "wide" },
-  { src: "assets/images/combo.svg",            alt: "Ilustração demonstrativa de combo",                    caption: "Combos",   demo: true, size: "sq" }
+  { src: "assets/burger.svg",           alt: "Ilustração demonstrativa de um hambúrguer",            caption: "Lanches",  demo: true, size: "wide" },
+  { src: "assets/foto-placeholder.svg", alt: "Espaço reservado para a foto oficial da fachada",      caption: "Fachada",  demo: true, size: "tall" },
+  { src: "assets/fries.svg",            alt: "Ilustração demonstrativa de porção de batata frita",   caption: "Porções",  demo: true, size: "sq" },
+  { src: "assets/foto-placeholder.svg", alt: "Espaço reservado para a foto oficial do ambiente",     caption: "Ambiente", demo: true, size: "sq" },
+  { src: "assets/especial.svg",         alt: "Ilustração demonstrativa de sanduíche especial",       caption: "Especiais", demo: true, size: "wide" },
+  { src: "assets/combo.svg",            alt: "Ilustração demonstrativa de combo",                    caption: "Combos",   demo: true, size: "sq" }
 ];
 
 /* --------------------------------------------------------------------------
